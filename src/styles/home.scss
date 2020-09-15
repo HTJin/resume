@@ -1,23 +1,35 @@
 .home {
   display: flex;
   justify-content: center;
-  margin-top: 5%;
-  margin-right: 8em;
+  align-items: center;
+  height: 100vh;
   .profile {
-    border-right: 2px solid #004346;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    align-self: center;
     .face {
+      align-self: center;
       border-radius: 50%;
-      width: 75%;
-      border: 10px solid #09BC8A;
+      width: 30%;
       box-shadow: 0 0 50px #09BC8A;
     }
   }
+  .split {
+    width: 5px;
+    height: 50%;
+    border-left: 1px solid #09BC8A;
+    border-right: 1px solid #09BC8A;
+    border-radius: 5px;
+    margin-left: -13.5%;
+    margin-right: 10%;
+  }
   .link-buttons {
     align-self: center;
-    margin-left: 8em;
-    color: #75DDDD;
+    color: #09BC8A;
+    .mdiIcons {
+      display: flex;
+      justify-content: space-evenly;
+      width: 90%;
+      margin-left: .5em;
+    }
   }
 }
 .theme--light.v-application {
