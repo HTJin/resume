@@ -1,37 +1,51 @@
-.home {
+.home{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  .profile {
+  flex-direction: column;
+  .mainbody {
     align-self: center;
-    .face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    transform: translateX(2.1em);
+    .profile {
       align-self: center;
-      border-radius: 50%;
-      width: 30%;
-      box-shadow: 0 0 50px #09BC8A;
+      .face {
+        align-self: center;
+        border-radius: 50%;
+        width: 30%;
+        box-shadow: 0 0 50px #3CA373;
+      }
+    }
+    .split {
+      width: 5px;
+      height: 50%;
+      border-left: 1px solid #09BC8A;
+      border-right: 1px solid #09BC8A;
+      border-radius: 5px;
+      margin-left: -30%;
+      margin-right: 15%;
+    }
+    .link-buttons {
+      align-self: center;
+      color: #09BC8A;
+      font-size: large;
+      font-weight: 700;
+      .mdiIcons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 90%;
+        margin-left: .5em;
+      }
     }
   }
-  .split {
-    width: 5px;
-    height: 50%;
-    border-left: 1px solid #09BC8A;
-    border-right: 1px solid #09BC8A;
-    border-radius: 5px;
-    margin-left: -13.5%;
-    margin-right: 10%;
-  }
-  .link-buttons {
+  .down {
     align-self: center;
-    color: #09BC8A;
-    .mdiIcons {
-      display: flex;
-      justify-content: space-evenly;
-      width: 90%;
-      margin-left: .5em;
-    }
+    cursor: pointer;
   }
 }
 .theme--light.v-application {
   background-color: #172A3A;
+  font-family: 'Nunito', sans-serif;
 }
