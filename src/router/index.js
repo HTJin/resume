@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Timeline from "../components/Timeline.vue";
+import Timeline from "../views/Timeline.vue";
 
 Vue.use(VueRouter);
 
