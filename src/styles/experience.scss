@@ -1,0 +1,21 @@
+.resume-container {
+  align-self: center;
+  width: 60vw;
+  color: #09BC8A;
+  height: 100%;
+  h1 {
+    margin-top: 1.5rem;
+  }
+  h2 {
+    margin-left: 1rem;
+  }
+  h3 {
+    margin-left: 2rem;
+    .year {
+      float: right;
+    }
+  }
+  ul {
+    margin-left: 3rem;
+  }
+}

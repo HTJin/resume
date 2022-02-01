@@ -1,6 +1,6 @@
 <template>
-  <transition name="slide-fade">
-    <div v-if="show" class="home">
+  <v-expand-transition>
+    <v-container fluid v-show="visible" class="home">
       <div class="mainbody">
         <div class="profile">
           <img class="face" alt="Muh face" src="../assets/profile.jpeg" />
@@ -76,7 +76,7 @@
       </div>
       <v-tooltip top color="#09BC8A">
         <template v-slot:activator="{ on }">
-          <div class="down" v-on="on">
+          <div class="down" @click="visible = !visible" v-on="on">
             <router-link to="/timeline">
               <v-hover v-slot:default="{ hover }">
                 <v-icon
@@ -84,7 +84,7 @@
                   large
                   dark
                   color="#09BC8A"
-                  @click="show = !show"
+                  @click="visible = !visible"
                   >{{ mdiChevronTripleDown }}</v-icon
                 >
                 <v-icon v-else large dark color="#FFF">{{
@@ -94,10 +94,10 @@
             </router-link>
           </div>
         </template>
-        <span>See what I can do!</span>
+        <span>Timeline</span>
       </v-tooltip>
-    </div>
-  </transition>
+    </v-container>
+  </v-expand-transition>
 </template>
 
 <script>
@@ -117,7 +117,7 @@ export default {
     mdiPowerOn: mdiPowerOn,
     mdiChevronDown: mdiChevronDown,
     mdiChevronTripleDown: mdiChevronTripleDown,
-    show: true
+    visible: true
   })
 };
 </script>
