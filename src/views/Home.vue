@@ -1,79 +1,83 @@
 <template>
   <v-expand-transition>
     <v-container fluid v-show="visible" class="home">
-      <div class="mainbody">
-        <div class="profile">
+      <v-row class="mainbody">
+        <v-col class="profile" lg="5">
           <img class="face" alt="Muh face" src="../assets/profile.jpeg" />
-        </div>
-        <div class="split"></div>
-        <div class="link-buttons">
-          <h1>Hyun-Tae Jin</h1>
-          <div class="mdiIcons">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="mailto:htjmario@gmail.com"
-            >
-              <v-tooltip bottom color="#172A3A">
-                <template v-slot:activator="{ on }">
-                  <v-hover v-slot:default="{ hover }">
-                    <v-icon
-                      large
-                      dark
-                      v-on="on"
-                      :color="hover ? '#CE493B' : '#FFF'"
-                      >{{ mdiGmail }}</v-icon
-                    >
-                  </v-hover>
-                </template>
-                <span>htjmario@gmail.com</span>
-              </v-tooltip>
-            </a>
-            <v-icon small dark>{{ mdiPowerOn }}</v-icon>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/HTJin"
-            >
-              <v-tooltip bottom color="#172A3A">
-                <template v-slot:activator="{ on }">
-                  <v-hover v-slot:default="{ hover }">
-                    <v-icon
-                      large
-                      dark
-                      v-on="on"
-                      :color="hover ? '#A66CFF' : '#FFF'"
-                      >{{ mdiGithub }}</v-icon
-                    >
-                  </v-hover>
-                </template>
-                <span>github.com/htjin</span>
-              </v-tooltip>
-            </a>
-            <v-icon small dark>{{ mdiPowerOn }}</v-icon>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://linkedin.com/in/HTJin"
-            >
-              <v-tooltip bottom color="#172A3A">
-                <template v-slot:activator="{ on }">
-                  <v-hover v-slot:default="{ hover }">
-                    <v-icon
-                      large
-                      dark
-                      v-on="on"
-                      :color="hover ? '#0077B5' : '#FFF'"
-                      >{{ mdiLinkedin }}</v-icon
-                    >
-                  </v-hover>
-                </template>
-                <span>linkedin/in/HTJin</span>
-              </v-tooltip>
-            </a>
+        </v-col>
+        <v-col lg="2">
+          <div class="split"></div>
+        </v-col>
+        <v-col lg="5">
+          <div class="link-buttons">
+            <h1>Hyun-Tae Jin</h1>
+            <div class="mdiIcons">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="mailto:htjmario@gmail.com"
+              >
+                <v-tooltip bottom color="#172A3A">
+                  <template v-slot:activator="{ on }">
+                    <v-hover v-slot:default="{ hover }">
+                      <v-icon
+                        large
+                        dark
+                        v-on="on"
+                        :color="hover ? '#CE493B' : '#FFF'"
+                        >{{ mdiGmail }}</v-icon
+                      >
+                    </v-hover>
+                  </template>
+                  <span>htjmario@gmail.com</span>
+                </v-tooltip>
+              </a>
+              <v-icon small dark>{{ mdiPowerOn }}</v-icon>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/HTJin"
+              >
+                <v-tooltip bottom color="#172A3A">
+                  <template v-slot:activator="{ on }">
+                    <v-hover v-slot:default="{ hover }">
+                      <v-icon
+                        large
+                        dark
+                        v-on="on"
+                        :color="hover ? '#A66CFF' : '#FFF'"
+                        >{{ mdiGithub }}</v-icon
+                      >
+                    </v-hover>
+                  </template>
+                  <span>github.com/htjin</span>
+                </v-tooltip>
+              </a>
+              <v-icon small dark>{{ mdiPowerOn }}</v-icon>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://linkedin.com/in/HTJin"
+              >
+                <v-tooltip bottom color="#172A3A">
+                  <template v-slot:activator="{ on }">
+                    <v-hover v-slot:default="{ hover }">
+                      <v-icon
+                        large
+                        dark
+                        v-on="on"
+                        :color="hover ? '#0077B5' : '#FFF'"
+                        >{{ mdiLinkedin }}</v-icon
+                      >
+                    </v-hover>
+                  </template>
+                  <span>linkedin/in/HTJin</span>
+                </v-tooltip>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
+        </v-col>
+      </v-row>
       <v-tooltip top color="#09BC8A">
         <template v-slot:activator="{ on }">
           <div class="down" @click="visible = !visible" v-on="on">

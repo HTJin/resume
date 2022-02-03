@@ -14,7 +14,7 @@
 
     <h1>Personal Projects</h1>
     <div v-for="exp in sectionPersPro" :key="exp.id">
-      <h3>{{ exp.job }}</h3>
+      <h3 class="projects">{{ exp.job }}</h3>
       <ul v-for="desc in exp.description" :key="desc.id">
         <li>{{ desc }}</li>
       </ul>

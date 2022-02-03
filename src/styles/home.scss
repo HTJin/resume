@@ -1,44 +1,48 @@
 .home{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
   .mainbody {
-    align-self: center;
+    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    height: 90vh;
-    transform: translateX(2.1em);
-    .profile {
-      align-self: center;
-      .face {
-        align-self: center;
-        border-radius: 50%;
-        width: 30%;
-        box-shadow: 0 0 50px #3CA373;
-      }
+    align-self: center;
+    .face {
+      border-radius: 50%;
+      box-shadow: 0 0 50px #3CA373;
+      width: 10em;
+      float: right;
     }
     .split {
       width: 5px;
-      height: 50%;
+      height: 30em;
       border-left: 1px solid #09BC8A;
       border-right: 1px solid #09BC8A;
       border-radius: 5px;
-      margin-left: -30%;
-      margin-right: 15%;
+      margin: auto;
     }
     .link-buttons {
-      align-self: center;
+      display: flex;
+      flex-direction: column;
       color: #09BC8A;
-      font-size: large;
+      font-size: 1.25em;
       font-weight: 700;
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+      float: left;
+      h1 {
+        align-self: center;
+      }
       .mdiIcons {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-around;
+        align-self: center;
         align-items: center;
-        width: 90%;
+        width: 10em;
         margin-left: .5em;
       }
     }
@@ -51,15 +55,4 @@
 .theme--light.v-application {
   background-color: #172A3A;
   font-family: 'Nunito', sans-serif;
-}
-
-.slide-fade-enter-active {
-  transition: all .3s ease;
-}
-.slide-fade-leave-active {
-  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
-}
-.slide-fade-enter, .slide-fade-leave-to
-/* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateY(100%);
 }
