@@ -14,7 +14,19 @@
       border-radius: 50%;
       box-shadow: 0 0 50px #3CA373;
       width: 10em;
-      float: right;
+
+      @media only screen and (min-width: 600px) {
+        float: right;
+      }
+
+      @media only screen and (max-width: 600px) {
+        float: none;
+        margin-top: 10em;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translate(-51.5%, -50%);
+      }
     }
     .split {
       width: 5px;
@@ -23,6 +35,19 @@
       border-right: 1px solid #09BC8A;
       border-radius: 5px;
       margin: auto;
+      
+      @media only screen and (max-width: 600px) {
+        border-top: 1px solid #09BC8A;
+        border-bottom: 1px solid #09BC8A;
+        height: 5px;
+        width: 90vw;
+        margin-top: -35%;
+        margin-bottom: 5vh;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, -50%);
+      }
     }
     .link-buttons {
       display: flex;
@@ -33,7 +58,19 @@
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
-      float: left;
+      
+      @media only screen and (min-width: 600px) {
+        float: left;
+      }
+      
+      @media only screen and (max-width: 600px) {
+        float: none;
+        margin-top: -40%;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        transform: translate(-51.5%, -50%);
+      }
       h1 {
         align-self: center;
       }

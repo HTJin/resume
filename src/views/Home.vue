@@ -2,13 +2,13 @@
   <v-expand-transition>
     <v-container fluid v-show="visible" class="home">
       <v-row class="mainbody">
-        <v-col class="profile" lg="5">
+        <v-col xl="5" lg="5" md="5" sm="5" xs="6">
           <img class="face" alt="Muh face" src="../assets/profile.jpeg" />
         </v-col>
-        <v-col lg="2">
+        <v-col xl="2" lg="2" md="2" sm="2" xs="0">
           <div class="split"></div>
         </v-col>
-        <v-col lg="5">
+        <v-col xl="5" lg="5" md="5" sm="5" xs="6">
           <div class="link-buttons">
             <h1>Hyun-Tae Jin</h1>
             <div class="mdiIcons">

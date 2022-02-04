@@ -17,7 +17,7 @@
             </router-link>
           </div>
         </template>
-        <span>Timeline</span>
+        <span>Back Up</span>
       </v-tooltip>
     </v-container>
   </v-expand-transition>
