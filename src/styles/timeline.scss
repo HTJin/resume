@@ -1,9 +1,25 @@
 .timeline {
   display: flex;
   flex-direction: column;
-  .up {
-    align-self: center;
-    cursor: pointer;
-    margin-top: 5em;
+  align-items: center;
+  height: 100%;
+  .experience-container {
+    width: 80%;
+    overflow-y: scroll;
+    height: 88vh;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  .scroll {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    align-items: flex-end;
+    .up {
+      cursor: pointer;
+    }
   }
 }

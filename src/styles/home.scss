@@ -1,9 +1,10 @@
 .home{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   overflow: hidden;
   .mainbody {
     width: 100%;
@@ -30,15 +31,15 @@
     }
     .split {
       width: 5px;
-      height: 30em;
-      border-left: 1px solid #09BC8A;
-      border-right: 1px solid #09BC8A;
+      height: 50vh;
+      border-left: 1px solid #5cdb95;
+      border-right: 1px solid #5cdb95;
       border-radius: 5px;
       margin: auto;
       
       @media only screen and (max-width: 600px) {
-        border-top: 1px solid #09BC8A;
-        border-bottom: 1px solid #09BC8A;
+        border-top: 1px solid #5cdb95;
+        border-bottom: 1px solid #5cdb95;
         height: 5px;
         width: 90vw;
         margin-top: -35%;
@@ -52,7 +53,7 @@
     .link-buttons {
       display: flex;
       flex-direction: column;
-      color: #09BC8A;
+      color: #5cdb95;
       font-size: 1.25em;
       font-weight: 700;
       overflow: hidden;
@@ -84,12 +85,19 @@
       }
     }
   }
-  .down {
-    align-self: center;
-    cursor: pointer;
+  .scroll {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    align-items: flex-end;
+    .down {
+      cursor: pointer;
+    }
   }
 }
 .theme--light.v-application {
-  background-color: #172A3A;
+  background-color: #05385B;
   font-family: 'Nunito', sans-serif;
 }

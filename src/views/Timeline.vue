@@ -1,16 +1,18 @@
 <template>
-  <v-expand-transition>
-    <v-container fluid v-show="visible" class="timeline">
+  <v-container fluid v-if="show" class="timeline">
+    <div class="experience-container">
       <Experience :section="section" />
-      <v-tooltip top color="#09BC8A">
-        <template v-slot:activator="{ on }">
-          <div class="up" @click="visible = !visible" v-on="on">
+    </div>
+    <div class="scroll">
+      <v-tooltip top color="#5cdb95">
+        <template v-slot:activator="{ on, attrs }">
+          <div class="up" @click="show = !show" v-on="on" v-bind="attrs">
             <router-link to="/">
               <v-hover v-slot:default="{ hover }">
-                <v-icon v-if="hover" large dark color="#09BC8A">{{
+                <v-icon v-if="hover" large dark color="#5cdb95">{{
                   mdiChevronTripleUp
                 }}</v-icon>
-                <v-icon v-else large dark color="#FFF">{{
+                <v-icon v-else large dark color="#edf5e1">{{
                   mdiChevronUp
                 }}</v-icon>
               </v-hover>
@@ -19,8 +21,8 @@
         </template>
         <span>Back Up</span>
       </v-tooltip>
-    </v-container>
-  </v-expand-transition>
+    </div>
+  </v-container>
 </template>
 
 <script>
@@ -37,7 +39,7 @@ export default {
   data: () => ({
     mdiChevronUp: mdiChevronUp,
     mdiChevronTripleUp: mdiChevronTripleUp,
-    visible: true,
+    show: true,
     section: [
       {
         title: "Professional Experience",
