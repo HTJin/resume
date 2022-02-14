@@ -1,0 +1,45 @@
+[
+  {
+    "title": "Skills",
+    "items": [
+      "VueJS, Vuex, Axios",
+      "ReactJS, Redux",
+      "AngularJS, TypeScript",
+      "Polymer/lit-element",
+      "Vuetify, Material-UI, Bootstrap",
+      "Python, Java",
+      "PHP, MySQL",
+      "HTML, SCSS, CSS",
+      "Pega 6.3/Pega 8.2"
+    ]
+  },
+  {
+    "title": "Education",
+    "location": "University of Pittsburgh, Pittsburgh, PA",
+    "items": [
+      "Bachelor of Science in Information Science",
+      "Concentrated Area in Networks and Security",
+      "Related Area/Minor in Computer Science",
+      "Graduated December 2016"
+    ]
+  },
+  {
+    "title": "Coursework",
+    "items": [
+      "Web Programming",
+      "Website Design/Development",
+      "Human Factors in Systems Design",
+      "Computer Security",
+      "Database Management Systems",
+      "Analysis of Information Systems",
+      "Telecommunications & Networks",
+      "Applications of Networks",
+      "Wireless Networks"
+    ]
+  },
+  {
+    "title": "Citizenship/Work Authorization",
+    "location": "US Citizen",
+    "items": ["Bilingual in English and Korean"]
+  }
+]

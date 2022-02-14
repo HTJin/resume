@@ -5,7 +5,7 @@
         <img class="face" alt="Muh face" src="../assets/profile.jpeg" />
       </v-col>
       <v-col xl="2" lg="2" md="2" sm="2" xs="1">
-        <div class="split"></div>
+        <div class="split" />
       </v-col>
       <v-col xl="5" lg="5" md="5" sm="5" xs="6">
         <div class="link-buttons">

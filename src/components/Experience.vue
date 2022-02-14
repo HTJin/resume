@@ -7,7 +7,7 @@
         {{ exp.location }}
         <span class="year">{{ exp.year }}</span>
       </h3>
-      <ul v-for="desc in exp.description" :key="desc.id">
+      <ul class="descProf" v-for="desc in exp.description" :key="desc.id">
         <li>{{ desc }}</li>
       </ul>
     </div>
@@ -15,7 +15,7 @@
     <h1>Personal Projects</h1>
     <div v-for="exp in sectionPersPro" :key="exp.id">
       <h3 class="projects">{{ exp.job }}</h3>
-      <ul v-for="desc in exp.description" :key="desc.id">
+      <ul class="descPers" v-for="desc in exp.description" :key="desc.id">
         <li>{{ desc }}</li>
       </ul>
     </div>
@@ -27,7 +27,7 @@
         {{ exp.location }}
         <span class="year">{{ exp.year }}</span>
       </h3>
-      <ul v-for="desc in exp.description" :key="desc.id">
+      <ul class="descComm" v-for="desc in exp.description" :key="desc.id">
         <li>{{ desc }}</li>
       </ul>
     </div>

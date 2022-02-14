@@ -1,4 +1,4 @@
-.resume-container {
+.resume-container, .skills-container {
   align-self: center;
   font-size: 90%;
   h1 {
@@ -23,7 +23,12 @@
     }
   }
   ul {
-    margin-left: 3rem;
     color: #edf5e1;
+    margin-left: 3rem;
+  }
+  .descProf:nth-child(odd),
+  .descPers:nth-child(even),
+  .descComm:nth-child(odd) {
+    color: hsl(250, 100%, 90%);
   }
 }
