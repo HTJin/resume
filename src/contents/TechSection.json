@@ -1,7 +1,7 @@
 [
   {
     "title": "Skills",
-    "items": [
+    "skills": [
       "VueJS, Vuex, Axios",
       "ReactJS, Redux",
       "AngularJS, TypeScript",
@@ -16,7 +16,7 @@
   {
     "title": "Education",
     "location": "University of Pittsburgh, Pittsburgh, PA",
-    "items": [
+    "skills": [
       "Bachelor of Science in Information Science",
       "Concentrated Area in Networks and Security",
       "Related Area/Minor in Computer Science",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Coursework",
-    "items": [
+    "skills": [
       "Web Programming",
       "Website Design/Development",
       "Human Factors in Systems Design",
@@ -40,6 +40,6 @@
   {
     "title": "Citizenship/Work Authorization",
     "location": "US Citizen",
-    "items": ["Bilingual in English and Korean"]
+    "skills": ["Bilingual in English and Korean"]
   }
 ]
