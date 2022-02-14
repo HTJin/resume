@@ -13,8 +13,8 @@
     </div>
     <div class="scroll">
       <v-tooltip top color="#5cdb95">
-        <template v-slot:activator="{ on, attrs }">
-          <div class="up" @click="determineShow" v-on="on" v-bind="attrs">
+        <template v-slot:activator="{ on }">
+          <div class="up" @click="determineShow" v-on="on">
             <router-link to="/">
               <v-hover v-slot:default="{ hover }">
                 <v-icon v-if="hover" large dark color="#5cdb95">{{
