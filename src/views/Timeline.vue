@@ -1,12 +1,12 @@
 <template>
-  <v-container fluid v-if="show" class="timeline">
+  <v-container fluid v-show="show" class="timeline">
     <div class="experience-container">
       <Experience :section="section" />
     </div>
     <div class="scroll">
       <v-tooltip top color="#5cdb95">
         <template v-slot:activator="{ on, attrs }">
-          <div class="up" @click="show = !show" v-on="on" v-bind="attrs">
+          <div class="up" @click="determineShow" v-on="on" v-bind="attrs">
             <router-link to="/">
               <v-hover v-slot:default="{ hover }">
                 <v-icon v-if="hover" large dark color="#5cdb95">{{
@@ -28,7 +28,6 @@
 <script>
 import { mdiChevronUp } from "@mdi/js";
 import { mdiChevronTripleUp } from "@mdi/js";
-
 import Experience from "../components/Experience.vue";
 
 export default {
@@ -36,10 +35,19 @@ export default {
   components: {
     Experience
   },
+  computed: {
+    show() {
+      return this.$store.state.show;
+    }
+  },
+  methods: {
+    determineShow() {
+      this.$store.commit("determineShow");
+    }
+  },
   data: () => ({
     mdiChevronUp: mdiChevronUp,
     mdiChevronTripleUp: mdiChevronTripleUp,
-    show: true,
     section: [
       {
         title: "Professional Experience",

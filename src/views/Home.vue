@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid v-if="visible" class="home">
+  <v-container fluid v-show="visible" class="home">
     <v-row class="mainbody">
       <v-col xl="5" lg="5" md="5" sm="5" xs="6">
         <img class="face" alt="Muh face" src="../assets/profile.jpeg" />
@@ -16,18 +16,16 @@
               rel="noopener noreferrer"
               href="mailto:htjmario@gmail.com"
             >
-              <v-tooltip bottom color="#05385B">
-                <template v-slot:activator="{ on }">
-                  <v-hover v-slot:default="{ hover }">
-                    <v-icon
-                      large
-                      dark
-                      v-on="on"
-                      :color="hover ? '#CE493B' : '#edf5e1'"
-                      >{{ mdiGmail }}</v-icon
-                    >
-                  </v-hover>
-                </template>
+              <v-hover v-slot="{ hover }">
+                <v-icon
+                  id="gmail"
+                  large
+                  dark
+                  :color="hover ? '#CE493B' : '#edf5e1'"
+                  >{{ mdiGmail }}</v-icon
+                >
+              </v-hover>
+              <v-tooltip activator="#gmail" bottom color="#05385B">
                 <span>htjmario@gmail.com</span>
               </v-tooltip>
             </a>
@@ -37,18 +35,16 @@
               rel="noopener noreferrer"
               href="https://github.com/HTJin"
             >
-              <v-tooltip bottom color="#05385B">
-                <template v-slot:activator="{ on }">
-                  <v-hover v-slot:default="{ hover }">
-                    <v-icon
-                      large
-                      dark
-                      v-on="on"
-                      :color="hover ? '#A66CFF' : '#edf5e1'"
-                      >{{ mdiGithub }}</v-icon
-                    >
-                  </v-hover>
-                </template>
+              <v-hover v-slot:default="{ hover }">
+                <v-icon
+                  id="github"
+                  large
+                  dark
+                  :color="hover ? '#A66CFF' : '#edf5e1'"
+                  >{{ mdiGithub }}</v-icon
+                >
+              </v-hover>
+              <v-tooltip activator="#github" bottom color="#05385B">
                 <span>github.com/htjin</span>
               </v-tooltip>
             </a>
@@ -58,18 +54,16 @@
               rel="noopener noreferrer"
               href="https://linkedin.com/in/HTJin"
             >
-              <v-tooltip bottom color="#05385B">
-                <template v-slot:activator="{ on }">
-                  <v-hover v-slot:default="{ hover }">
-                    <v-icon
-                      large
-                      dark
-                      v-on="on"
-                      :color="hover ? '#0077B5' : '#edf5e1'"
-                      >{{ mdiLinkedin }}</v-icon
-                    >
-                  </v-hover>
-                </template>
+              <v-hover v-slot:default="{ hover }">
+                <v-icon
+                  id="linkedin"
+                  large
+                  dark
+                  :color="hover ? '#0077B5' : '#edf5e1'"
+                  >{{ mdiLinkedin }}</v-icon
+                >
+              </v-hover>
+              <v-tooltip activator="#linkedin" bottom color="#05385B">
                 <span>linkedin/in/HTJin</span>
               </v-tooltip>
             </a>
@@ -80,17 +74,12 @@
     <div class="scroll">
       <v-tooltip top color="#5cdb95">
         <template v-slot:activator="{ on }">
-          <div class="down" @click="visible = !visible" v-on="on">
+          <div class="down" @click="determineVisible" v-on="on">
             <router-link to="/timeline">
               <v-hover v-slot:default="{ hover }">
-                <v-icon
-                  v-if="hover"
-                  large
-                  dark
-                  color="#5cdb95"
-                  @click="visible = !visible"
-                  >{{ mdiChevronTripleDown }}</v-icon
-                >
+                <v-icon v-if="hover" large dark color="#5cdb95">{{
+                  mdiChevronTripleDown
+                }}</v-icon>
                 <v-icon v-else large dark color="#edf5e1">{{
                   mdiChevronDown
                 }}</v-icon>
@@ -114,14 +103,23 @@ import { mdiChevronTripleDown } from "@mdi/js";
 
 export default {
   name: "Home",
+  computed: {
+    visible() {
+      return this.$store.state.visible;
+    }
+  },
+  methods: {
+    determineVisible() {
+      this.$store.commit("determineVisible");
+    }
+  },
   data: () => ({
     mdiGithub: mdiGithub,
     mdiGmail: mdiGmail,
     mdiLinkedin: mdiLinkedin,
     mdiPowerOn: mdiPowerOn,
     mdiChevronDown: mdiChevronDown,
-    mdiChevronTripleDown: mdiChevronTripleDown,
-    visible: true
+    mdiChevronTripleDown: mdiChevronTripleDown
   })
 };
 </script>
