@@ -9,6 +9,7 @@
     overflow-y: scroll;
     padding-left: 5vw;
     padding-right: 10vw;
+    transition: 1s;
     &::-webkit-scrollbar {
       display: none;
     }
@@ -16,11 +17,19 @@
       width: 5px;
       border-left: 1px solid hsl(150, 100%, 60%);
       border-right: 1px solid hsl(150, 100%, 60%);
+      box-shadow: 0 0 5px hsl(150, 100%, 60%);
       border-radius: 5px;
       height: 88vh;
       position: fixed;
       top: 12px;
       bottom: 0;
+    }
+    .toggle-over {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 88vh;
+      position: fixed;
     }
   }
   .scroll {

@@ -77,11 +77,8 @@
           <div class="down" @click="determineVisible" v-on="on">
             <router-link to="/timeline">
               <v-hover v-slot:default="{ hover }">
-                <v-icon v-if="hover" large dark color="#5cdb95">{{
-                  mdiChevronTripleDown
-                }}</v-icon>
-                <v-icon v-else large dark color="#edf5e1">{{
-                  mdiChevronDown
+                <v-icon large dark :color="hover ? '#5cdb95' : '#edf5e1'">{{
+                  hover ? mdiChevronTripleDown : mdiChevronDown
                 }}</v-icon>
               </v-hover>
             </router-link>

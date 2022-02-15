@@ -1,13 +1,15 @@
 <template>
-  <div class="skills-container">
-    <div v-for="item in section" :key="item.id">
-      <h1>{{ item.title }}</h1>
-      <h3 v-if="item.location">{{ item.location }}</h3>
-      <ul class="skill" v-for="skill in item.skills" :key="skill.id">
-        <li>{{ skill }}</li>
-      </ul>
+  <v-slide-x-reverse-transition>
+    <div class="skills-container">
+      <div v-for="item in section" :key="item.id">
+        <h1>{{ item.title }}</h1>
+        <h3 v-if="item.location">{{ item.location }}</h3>
+        <ul class="skill" v-for="skill in item.skills" :key="skill.id">
+          <li>{{ skill }}</li>
+        </ul>
+      </div>
     </div>
-  </div>
+  </v-slide-x-reverse-transition>
 </template>
 
 <script>

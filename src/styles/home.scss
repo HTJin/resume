@@ -12,9 +12,21 @@
     align-self: center;
     .face {
       border-radius: 50%;
-      box-shadow: 0 0 50px hsl(150, 100%, 60%);
       width: 10em;
-
+      animation: glow 3s linear infinite;
+      
+      @keyframes glow {
+        0% {
+          box-shadow: 0 0 15px hsl(150, 100%, 60%);
+        }
+        50% {
+          box-shadow: 0 0 50px hsl(150, 100%, 60%);
+        }
+        100% {
+          box-shadow: 0 0 15px hsl(150, 100%, 60%);
+        }
+      }
+      
       @media only screen and (min-width: 600px) {
         float: right;
       }
@@ -33,6 +45,7 @@
       height: 50vh;
       border-left: 1px solid hsl(150, 100%, 60%);
       border-right: 1px solid hsl(150, 100%, 60%);
+      box-shadow: 0 0 5px hsl(150, 100%, 60%);
       border-radius: 5px;
       margin: auto;
       
@@ -72,6 +85,19 @@
       }
       h1 {
         align-self: center;
+        animation: neon 3s linear infinite;
+
+        @keyframes neon {
+          0% {
+            text-shadow: 0 0 25px hsl(150, 100%, 60%);
+          }
+          50% {
+            text-shadow: none;
+          }
+          100% {
+            text-shadow: 0 0 25px hsl(150, 100%, 60%);
+          }
+        }
       }
       .mdiIcons {
         display: flex;
