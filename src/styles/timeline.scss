@@ -10,6 +10,7 @@
     padding-left: 5vw;
     padding-right: 10vw;
     transition: 1s;
+    scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
     }

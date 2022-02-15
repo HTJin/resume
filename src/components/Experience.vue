@@ -31,10 +31,13 @@
       </v-tooltip>
       <h1>Professional Experience</h1>
       <div v-for="exp in sectionProfExp" :key="exp.id">
-        <h2>{{ exp.job }}</h2>
+        <h2>
+          {{ exp.job }}
+
+          <span class="year">{{ exp.year }}</span>
+        </h2>
         <h3>
           {{ exp.location }}
-          <span class="year">{{ exp.year }}</span>
         </h3>
         <ul class="descProf" v-for="desc in exp.description" :key="desc.id">
           <v-expand-transition>
@@ -72,10 +75,13 @@
       </v-tooltip>
       <h1>Community Involvement</h1>
       <div v-for="exp in sectionCommInv" :key="exp.id">
-        <h2>{{ exp.job }}</h2>
+        <h2>
+          {{ exp.job }}
+
+          <span class="year">{{ exp.year }}</span>
+        </h2>
         <h3>
           {{ exp.location }}
-          <span class="year">{{ exp.year }}</span>
         </h3>
         <ul class="descComm" v-for="desc in exp.description" :key="desc.id">
           <v-expand-transition>
