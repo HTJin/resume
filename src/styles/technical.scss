@@ -1,7 +1,17 @@
 .skills-container {
   transition: 1s;
+
+  @media only screen and (min-width: 1900px) {
+    margin-left: -8em;
+  }
+  @media only screen and (min-width: 1600px) and (max-width: 1900px) {
+    margin-left: -5em;
+  }
+  @media only screen and (min-width: 600px) and (max-width: 1600px) {
+    margin-left: -1em;
+  }
   @media only screen and (max-width: 600px) {
-    margin-left: -11em;
+    margin-left: -10em;
   }
   h1 {
     font-size: 160%;

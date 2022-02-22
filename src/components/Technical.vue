@@ -1,5 +1,5 @@
 <template>
-  <v-slide-x-reverse-transition>
+  <v-slide-x-reverse-transition mode="out-in">
     <div class="skills-container">
       <div v-for="item in section" :key="item.id">
         <h1>{{ item.title }}</h1>

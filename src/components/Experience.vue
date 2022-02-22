@@ -3,22 +3,24 @@
     <div class="resume-container">
       <v-hover v-slot:default="{ hover }">
         <span id="prof" class="toggle" @click="profOpen = !profOpen">
-          <v-icon
-            class="drawer-up"
-            :large="windowWidth > 600"
-            :small="windowWidth < 600"
-            dark
-            :color="!profOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
-            >{{ mdiMenuUp }}</v-icon
-          >
-          <v-icon
-            class="drawer-down"
-            :large="windowWidth > 600"
-            :small="windowWidth < 600"
-            dark
-            :color="profOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
-            >{{ mdiMenuDown }}</v-icon
-          >
+          <span class="internal">
+            <v-icon
+              class="drawer-up"
+              :large="windowWidth > 600"
+              :small="windowWidth < 600"
+              dark
+              :color="!profOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
+              >{{ mdiMenuUp }}</v-icon
+            >
+            <v-icon
+              class="drawer-down"
+              :large="windowWidth > 600"
+              :small="windowWidth < 600"
+              dark
+              :color="profOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
+              >{{ mdiMenuDown }}</v-icon
+            >
+          </span>
         </span>
       </v-hover>
       <v-tooltip
@@ -47,22 +49,24 @@
       </div>
       <v-hover v-slot:default="{ hover }">
         <span id="comm" class="toggle" @click="commOpen = !commOpen">
-          <v-icon
-            class="drawer-up"
-            :large="windowWidth > 600"
-            :small="windowWidth < 600"
-            dark
-            :color="!commOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
-            >{{ mdiMenuUp }}</v-icon
-          >
-          <v-icon
-            class="drawer-down"
-            :large="windowWidth > 600"
-            :small="windowWidth < 600"
-            dark
-            :color="commOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
-            >{{ mdiMenuDown }}</v-icon
-          >
+          <span class="internal">
+            <v-icon
+              class="drawer-up"
+              :large="windowWidth > 600"
+              :small="windowWidth < 600"
+              dark
+              :color="!commOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
+              >{{ mdiMenuUp }}</v-icon
+            >
+            <v-icon
+              class="drawer-down"
+              :large="windowWidth > 600"
+              :small="windowWidth < 600"
+              dark
+              :color="commOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
+              >{{ mdiMenuDown }}</v-icon
+            >
+          </span>
         </span>
       </v-hover>
       <v-tooltip
@@ -91,22 +95,24 @@
       </div>
       <v-hover v-slot:default="{ hover }">
         <span id="pers" class="toggle" @click="persOpen = !persOpen">
-          <v-icon
-            class="drawer-up"
-            :large="windowWidth > 600"
-            :small="windowWidth < 600"
-            dark
-            :color="!persOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
-            >{{ mdiMenuUp }}</v-icon
-          >
-          <v-icon
-            class="drawer-down"
-            :large="windowWidth > 600"
-            :small="windowWidth < 600"
-            dark
-            :color="persOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
-            >{{ mdiMenuDown }}</v-icon
-          >
+          <span class="internal">
+            <v-icon
+              class="drawer-up"
+              :large="windowWidth > 600"
+              :small="windowWidth < 600"
+              dark
+              :color="!persOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
+              >{{ mdiMenuUp }}</v-icon
+            >
+            <v-icon
+              class="drawer-down"
+              :large="windowWidth > 600"
+              :small="windowWidth < 600"
+              dark
+              :color="persOpen ? '#20688a' : hover ? '#5cdb95' : '#edf5e1'"
+              >{{ mdiMenuDown }}</v-icon
+            >
+          </span>
         </span>
       </v-hover>
       <v-tooltip
