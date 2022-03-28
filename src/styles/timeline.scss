@@ -1,49 +1,52 @@
-.timeline {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-  .sections-container {
+#scrollsection {
+  width: 100vw;
+  height: 100vh;
+  .timeline {
     display: flex;
-    width: 100%;
-    overflow-y: scroll;
-    padding-left: 5vw;
-    padding-right: 10vw;
-    transition: 1s;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-    .split {
-      width: 5px;
-      border-left: 1px solid hsl(150, 100%, 60%);
-      border-right: 1px solid hsl(150, 100%, 60%);
-      box-shadow: 0 0 5px hsl(150, 100%, 60%);
-      border-radius: 5px;
-      height: 88vh;
-      position: fixed;
-      top: 12px;
-      bottom: 0;
-    }
-    .toggle-over {
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    .sections-container {
       display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      height: 88vh;
-      position: fixed;
-      z-index: 0;
+      width: 100%;
+      margin-top: 7vh;
+      overflow-y: scroll;
+      padding-left: 5vw;
+      padding-right: 10vw;
+      transition: 1s;
+      overflow-x: hidden;
+      scrollbar-width: none;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .split {
+        width: 5px;
+        border-left: 1px solid hsl(150, 100%, 60%);
+        border-right: 1px solid hsl(150, 100%, 60%);
+        box-shadow: 0 0 5px hsl(150, 100%, 60%);
+        border-radius: 5px;
+        height: 83vh;
+        position: fixed;
+        top: 7vh;
+        bottom: 0;
+      }
+      .toggle-over {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 88vh;
+        position: fixed;
+        z-index: 0;
+      }
     }
-  }
-  .scroll {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    position: fixed;
-    top: 95vh;
-    bottom: 0;
-    .up {
-      cursor: pointer;
+    .scroll {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      position: fixed;
+      .up {
+        cursor: pointer;
+      }
     }
   }
 }

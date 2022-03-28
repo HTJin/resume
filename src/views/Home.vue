@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid v-show="visible" class="home">
+  <v-container fluid class="home" @wheel.prevent="handleWheel">
     <v-row class="mainbody">
       <v-col xl="5" lg="5" md="5" sm="5" xs="6">
         <img class="face" alt="Muh face" src="../assets/profile.jpeg" />
@@ -108,6 +108,19 @@ export default {
   methods: {
     determineVisible() {
       this.$store.commit("determineVisible");
+    },
+    handleWheel() {
+      let store = this.$store;
+      let router = this.$router;
+      const path = "timeline";
+      window.addEventListener("wheel", function(event) {
+        if (event.deltaY > 0) {
+          store.commit("determineVisible");
+          if (router.path !== path) {
+            router.push(path).catch(() => {});
+          }
+        }
+      });
     }
   },
   data: () => ({

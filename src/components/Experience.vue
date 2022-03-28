@@ -35,7 +35,6 @@
       <div v-for="exp in sectionProfExp" :key="exp.id">
         <h2>
           {{ exp.job }}
-
           <span class="year">{{ exp.year }}</span>
         </h2>
         <h3>
@@ -81,7 +80,6 @@
       <div v-for="exp in sectionCommInv" :key="exp.id">
         <h2>
           {{ exp.job }}
-
           <span class="year">{{ exp.year }}</span>
         </h2>
         <h3>
