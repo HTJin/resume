@@ -77,13 +77,12 @@ export default {
     handleWheel() {
       let store = this.$store;
       let router = this.$router;
-      const path = "/";
       const el = document.querySelector("#scrollsection");
       el.addEventListener("wheel", function(event) {
         if (event.deltaY < 0) {
           store.commit("determineShow");
-          if (router.path !== path) {
-            router.push(path).catch(() => {});
+          if (router.path !== "/") {
+            router.push("/").catch(() => {});
           }
         }
       });

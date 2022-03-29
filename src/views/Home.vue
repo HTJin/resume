@@ -112,12 +112,11 @@ export default {
     handleWheel() {
       let store = this.$store;
       let router = this.$router;
-      const path = "timeline";
       window.addEventListener("wheel", function(event) {
         if (event.deltaY > 0) {
           store.commit("determineVisible");
-          if (router.path !== path) {
-            router.push(path).catch(() => {});
+          if (router.path !== "timeline") {
+            router.push("timeline").catch(() => {});
           }
         }
       });
