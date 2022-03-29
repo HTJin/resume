@@ -1,7 +1,7 @@
 <template>
   <div id="scrollsection" @wheel.self="handleWheel">
-    <v-container fluid class="timeline" style="height: 88vh; width: 95%;">
-      <div v-if="!toggleSkills" class="sections-container">
+    <v-container class="timeline" style="height: 88vh;">
+      <div v-if="!toggleSkills" class="sections-container" style="width: 88vw;">
         <v-col xl="8" lg="8" md="8" sm="8" xs="6">
           <Experience :section="ExpSection" :windowWidth="windowWidth" />
         </v-col>
