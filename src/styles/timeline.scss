@@ -1,10 +1,12 @@
 #scrollsection {
   width: 100vw;
   height: 100vh;
+  cursor: url(../assets/mouse-move-up.png), auto;
   .timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: crosshair;
     .sections-container {
       display: flex;
       margin-top: 7vh;
