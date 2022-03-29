@@ -2,7 +2,7 @@
   <v-container fluid class="home" @wheel.prevent="handleWheel">
     <v-row class="mainbody">
       <v-col xl="5" lg="5" md="5" sm="5" xs="6">
-        <img class="face" alt="Muh face" src="../assets/profile.jpeg" />
+        <img class="face" alt="Muh face" src="../assets/profile.png" />
       </v-col>
       <v-col xl="2" lg="2" md="2" sm="2" xs="1">
         <div class="split" />
