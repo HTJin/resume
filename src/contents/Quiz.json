@@ -1,0 +1,302 @@
+[
+  {
+    "question": "Copy?",
+    "answer": ["ctrl c"]
+  },
+  {
+    "question": "Paste?",
+    "answer": ["ctrl v"]
+  },
+  {
+    "question": "Cut?",
+    "answer": ["ctrl x"]
+  },
+  {
+    "question": "Undo?",
+    "answer": ["ctrl z"]
+  },
+  {
+    "question": "Exit current window/program?",
+    "answer": ["alt f4"]
+  },
+  {
+    "question": "Start menu?",
+    "answer": ["win", "ctrl esc"]
+  },
+  {
+    "question": "Switch between windows/programs?",
+    "answer": ["alt tab"]
+  },
+  {
+    "question": "Which key to hold for deleting word by word with Backspace/Del?",
+    "answer": ["ctrl"]
+  },
+  {
+    "question": "Delete file permanently without placing it in the Recycle Bin?",
+    "answer": ["shift del"]
+  },
+  {
+    "question": "Bold font?",
+    "answer": ["ctrl b"]
+  },
+  {
+    "question": "Underline font?",
+    "answer": ["ctrl u"]
+  },
+  {
+    "question": "Italicize font?",
+    "answer": ["ctrl i"]
+  },
+  {
+    "question": "Which function key displays Help?",
+    "answer": ["f1"]
+  },
+  {
+    "question": "Which key to hold for navigating through text word by word with the arrow keys?",
+    "answer": ["ctrl"]
+  },
+  {
+    "question": "Task Manager?",
+    "answer": ["ctrl shift esc", "shift ctrl esc"]
+  },
+  {
+    "question": "Open new tab?",
+    "answer": ["ctrl t"]
+  },
+  {
+    "question": "Close current tab/explorer window?",
+    "answer": ["ctrl w"]
+  },
+  {
+    "question": "Open previously closed tab?",
+    "answer": ["ctrl shift t", "shift ctrl t"]
+  },
+  {
+    "question": "Which key to hold for selecting all files, texts, and tabs while left clicking?",
+    "answer": ["shift"]
+  },
+  {
+    "question": "Zoom in?",
+    "answer": ["ctrl =", "ctrl +"]
+  },
+  {
+    "question": "Zoom out?",
+    "answer": ["ctrl -"]
+  },
+  {
+    "question": "Select all?",
+    "answer": ["ctrl a"]
+  },
+  {
+    "question": "Which key to hold for selecting specific files while left clicking?",
+    "answer": ["ctrl"]
+  },
+  {
+    "question": "Which key to hold for copy/pasting a file/folder while drag/dropping with the mouse?",
+    "answer": ["ctrl"]
+  },
+  {
+    "question": "Which function key refreshes a page?",
+    "answer": ["f5"]
+  },
+  {
+    "question": "Find specific text?",
+    "answer": ["ctrl f"]
+  },
+  {
+    "question": "Which function key is the equivalent of the Find command?",
+    "answer": ["f3"]
+  },
+  {
+    "question": "Which function key checks spelling/grammar of a Word/PowerPoint document?",
+    "answer": ["f7"]
+  },
+  {
+    "question": "Which function key starts the presentation from the beginning in a PowerPoint?",
+    "answer": ["f5"]
+  },
+  {
+    "question": "Which function key makes the window fullscreen?",
+    "answer": ["f11"]
+  },
+  {
+    "question": "Which function key highlights the URL of the current browser window?",
+    "answer": ["f6"]
+  },
+  {
+    "question": "Highlight the URL of the current browser window? (EXCLUDING function keys)",
+    "answer": ["ctrl l", "alt d"]
+  },
+  {
+    "question": "Cycle tab to the right of the current tab?",
+    "answer": ["ctrl tab"]
+  },
+  {
+    "question": "Cycle tab to the left of the current tab?",
+    "answer": ["ctrl shift tab", "shift ctrl tab"]
+  },
+  {
+    "question": "Open a new window?",
+    "answer": ["ctrl n"]
+  },
+  {
+    "question": "Open a new incognito/private window?",
+    "answer": ["ctrl shift n", "shift ctrl n"]
+  },
+  {
+    "question": "Bookmark?",
+    "answer": ["ctrl d"]
+  },
+  {
+    "question": "Which key to hold for opening a link in a new tab with left click?",
+    "answer": ["ctrl"]
+  },
+  {
+    "question": "Which mouse click for opening a link in a new tab?",
+    "answer": ["m3", "middle"]
+  },
+  {
+    "question": "Browser history?",
+    "answer": ["ctrl h"]
+  },
+  {
+    "question": "Switch to the last tab?",
+    "answer": ["ctrl 9"]
+  },
+  {
+    "question": "Switch to the first tab?",
+    "answer": ["ctrl 1"]
+  },
+  {
+    "question": "Switch to the second tab?",
+    "answer": ["ctrl 2"]
+  },
+  {
+    "question": "Switch to the third tab?",
+    "answer": ["ctrl 3"]
+  },
+  {
+    "question": "Switch to the fourth tab?",
+    "answer": ["ctrl 4"]
+  },
+  {
+    "question": "Switch to the fifth tab?",
+    "answer": ["ctrl 5"]
+  },
+  {
+    "question": "Switch to the sixth tab?",
+    "answer": ["ctrl 6"]
+  },
+  {
+    "question": "Switch to the seventh tab?",
+    "answer": ["ctrl 7"]
+  },
+  {
+    "question": "Switch to the eighth tab?",
+    "answer": ["ctrl 8"]
+  },
+  {
+    "question": "Which key to hold for opening a link in a new window with left click?",
+    "answer": ["shift"]
+  },
+  {
+    "question": "Minimize all windows and display the desktop?",
+    "answer": ["win d", "win m"]
+  },
+  {
+    "question": "Browser downloads?",
+    "answer": ["ctrl j"]
+  },
+  {
+    "question": "Align text to the left?",
+    "answer": ["ctrl l"]
+  },
+  {
+    "question": "Align text to the right?",
+    "answer": ["ctrl r"]
+  },
+  {
+    "question": "Align text to the center?",
+    "answer": ["ctrl e"]
+  },
+  {
+    "question": "Save?",
+    "answer": ["ctrl s"]
+  },
+  {
+    "question": "Print?",
+    "answer": ["ctrl p"]
+  },
+  {
+    "question": "Return to normal zoom?",
+    "answer": ["ctrl 0"]
+  },
+  {
+    "question": "Scroll down on a webpage? (EXCLUDING mouse)",
+    "answer": ["space", "pgdown", "down"]
+  },
+  {
+    "question": "Scroll up on a webpage? (EXCLUDING mouse)",
+    "answer": ["shift space", "pgup", "up"]
+  },
+  {
+    "question": "Go to the very bottom of a webpage?",
+    "answer": ["end"]
+  },
+  {
+    "question": "Go to the very top of a webpage?",
+    "answer": ["home"]
+  },
+  {
+    "question": "Which key to hold for zooming in with the mouse wheel?",
+    "answer": ["ctrl"]
+  },
+  {
+    "question": "Which key to hold for zooming out with the mouse wheel?",
+    "answer": ["ctrl"]
+  },
+  {
+    "question": "Refresh a webpage or window?",
+    "answer": ["ctrl r", "f5"]
+  },
+  {
+    "question": "Move the cursor to the end of a line of text?",
+    "answer": ["end"]
+  },
+  {
+    "question": "Move the cursor to the beginning of a line of text?",
+    "answer": ["home"]
+  },
+  {
+    "question": "Maximize current window to fit the screen?",
+    "answer": ["win up"]
+  },
+  {
+    "question": "Restore down/minimize current window size?",
+    "answer": ["win down"]
+  },
+  {
+    "question": "Set current window to fit the left half of the screen?",
+    "answer": ["win left"]
+  },
+  {
+    "question": "Set current window to fit the right half of the screen?",
+    "answer": ["win right"]
+  },
+  {
+    "question": "Open the 'Run' window?",
+    "answer": ["win r"]
+  },
+  {
+    "question": "Redo?",
+    "answer": ["ctrl y"]
+  },
+  {
+    "question": "Which key to hold for opening file/folder properties window with double clicking or with pressing Return?",
+    "answer": ["alt"]
+  },
+  {
+    "question": "Open a File Explorer window?",
+    "answer": ["win e"]
+  }
+]

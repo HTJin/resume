@@ -1,0 +1,24 @@
+.display {
+  display: flex;
+  color: #edf5e1;
+  border: 1px solid hsl(150, 100%, 60%);
+  border-radius: 7px;
+  padding: 2em;
+  .modifiers, .keys {
+    flex: 1;
+    .input-info {
+      transform: translateX(-1rem);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .input-mod, .input-key {
+      transform: translateX(-2rem);
+      border-radius: 7px;
+      background-color: hsl(205, 80%, 15%);
+    }
+    .input-key {
+      transform: translateX(-4rem);
+    }
+  }
+}
